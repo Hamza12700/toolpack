@@ -4,7 +4,7 @@
 </script>
 
 <title>Tooly</title>
-<nav class="p-4 flex items-center gap-2">
+<nav class="py-4 px-8 flex items-center gap-2">
 	<Icon class="text-4xl" icon="solar:box-bold" />
 	<a class="font-bold text-4xl" href="/">Tooly</a>
 </nav>
