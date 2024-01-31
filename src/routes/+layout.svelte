@@ -9,6 +9,6 @@
 	<a class="font-bold text-4xl" href="/">Tooly</a>
 </nav>
 
-<main class="px-4">
+<main class="px-8">
 	<slot />
 </main>
