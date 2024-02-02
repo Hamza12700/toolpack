@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Icon from "@iconify/svelte";
   import type { PageData } from "./$types";
   import { onMount } from "svelte";
 
