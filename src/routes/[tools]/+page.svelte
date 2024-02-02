@@ -4,6 +4,7 @@
   import { onMount } from "svelte";
 
   export let data: PageData;
+
   let Component: ConstructorOfATypedSvelteComponent;
 
   onMount(async () => {
@@ -20,4 +21,5 @@
     <p>{data.description}</p>
   </hgroup>
 
+  <svelte:component this={Component} />
 </main>
