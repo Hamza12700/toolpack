@@ -5,9 +5,9 @@
   export let description: string
   export let icon_name: string
 
-	function add_to_favorite(event: MouseEvent & { currentTarget: EventTarget & HTMLButtonElement }) {
-		event.preventDefault()
-	}
+  function add_to_favorite(event: MouseEvent & { currentTarget: EventTarget & HTMLButtonElement }) {
+    event.preventDefault()
+  }
 </script>
 
 <a data-sveltekit-preload-data href={link}>
