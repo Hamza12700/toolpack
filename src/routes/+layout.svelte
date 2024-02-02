@@ -1,6 +1,6 @@
 <script>
-	import '../app.pcss';
-	import Icon from "@iconify/svelte"
+  import "../app.pcss";
+  import Icon from "@iconify/svelte";
 </script>
 
 <title>Tooly</title>
