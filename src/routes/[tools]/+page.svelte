@@ -9,3 +9,14 @@
     Component = (await import(`../../lib/${data.component}.svelte`)).default;
   });
 </script>
+
+<main class="mx-auto w-[44rem]">
+  <hgroup>
+    <div class="flex items-center justify-between">
+      <h1 class="pb-2 text-4xl font-semibold">{data.title}</h1>
+      <Icon class="text-gray-400 hover:text-red-400" icon="mdi:heart" />
+    </div>
+    <p>{data.description}</p>
+  </hgroup>
+
+</main>
