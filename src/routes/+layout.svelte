@@ -10,5 +10,5 @@
 </nav>
 
 <main class="px-8">
-	<slot />
+  <slot />
 </main>
