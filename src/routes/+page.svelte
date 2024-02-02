@@ -1,5 +1,5 @@
 <script lang="ts">
-  import ToolCard from "$lib/Tool_Card.svelte";
+  import ToolCard from "$lib/ToolCard.svelte";
   import { tools } from "$lib/tools";
 </script>
 
