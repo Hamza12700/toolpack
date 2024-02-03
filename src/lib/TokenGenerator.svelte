@@ -1,26 +1,34 @@
 <script lang="ts">
   let lenght = 40;
-  let is_uppercase = true;
-  let randomly_generated = "";
+  let output = "";
 
-  function random_uppercase_letters() {
+  function random_characters() {
+    const characters =
+      "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
     let result = "";
-    const characters = "QWERTYUIOPASDFGHJKLZXCVBNM";
-    let counter = 0;
-    while (counter < lenght) {
+    for (let i = 0; i < lenght; i++) {
       result += characters.charAt(
         Math.floor(Math.random() * characters.length),
       );
-      counter++;
     }
-    randomly_generated = result;
-    console.log(randomly_generated);
+    output = result
   }
 
-  if (is_uppercase) {
-    random_uppercase_letters();
-  }
+  random_characters()
 </script>
 
 <div class="mt-4 rounded-md bg-black/20 p-4">
+  <div class="mt-4 flex items-center gap-3">
+    <p class="flex gap-1">Lenght: <span>({lenght})</span></p>
+    <input
+      bind:value={lenght}
+      on:change={random_characters}
+      min="10"
+      max="512"
+      class="w-full"
+      type="range"
+    />
+  </div>
+  <textarea class="mt-2 px-1 h-20 w-full rounded-md text-center">{output}</textarea>
 </div>
