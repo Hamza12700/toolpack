@@ -11,7 +11,7 @@
 </script>
 
 <a data-sveltekit-preload-data href={link}>
-  <div class="w-96 px-4 py-3 rounded-md bg-gray-300">
+  <div class="w-96 h-44 px-4 py-3 rounded-md bg-gray-300">
     <div class="flex items-center justify-between">
       <Icon class="text-3xl" icon={icon_name}/>
       <button on:click={add_to_favorite}>
