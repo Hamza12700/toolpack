@@ -3,6 +3,7 @@
   const hashes = {
     sha1: "",
     sha256: "",
+    sha224: "",
     md5: "",
   };
 
@@ -22,6 +23,7 @@
     getHashes("md5");
     getHashes("sha1");
     getHashes("sha256");
+    getHashes("sha224");
   }
 </script>
 
@@ -45,6 +47,12 @@
       <span class="mr-3 w-20 rounded-sm bg-black/30 p-1 font-bold">SHA1</span>
       <p class="w-full overflow-scroll rounded-sm bg-black/30 p-1 font-mono">
         {hashes.sha1}
+      </p>
+    </div>
+    <div class="mt-2 flex items-center">
+      <span class="mr-3 w-20 rounded-sm bg-black/30 p-1 font-bold">SHA224</span>
+      <p class="w-full overflow-scroll rounded-sm bg-black/30 p-1 font-mono">
+        {hashes.sha224}
       </p>
     </div>
     <div class="mt-2 flex items-center">
