@@ -1,6 +1,6 @@
 <script lang="ts">
   import ToolCard from "$lib/ToolCard.svelte";
-  import { tools } from "$lib/tools";
+  import { tools } from "../tools";
 </script>
 
 <div class="mt-4 flex flex-wrap items-stretch gap-10">

@@ -1,4 +1,4 @@
-import { tools } from "$lib/tools"
+import { tools } from "../../tools"
 import type { PageLoad } from "./$types"
 
 export const load: PageLoad = ({params}) => {
