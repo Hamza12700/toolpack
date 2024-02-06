@@ -1,38 +1,37 @@
-# create-svelte
+# ToolPack
+A comprehensive suite of web-based tools. Built with SvelteKit and styled with Tailwind CSS, this website provides a modern and efficient platform for various IT-related tasks.
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
 
-## Creating a project
+## Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+* **Tool Selection**: Access a variety of tools tailored for different aspects of IT, such as network diagnostics, code formatting, data encryption, and more.
+* **User-Friendly Interface**: Enjoy a clean and intuitive design that makes navigating through tools and functionalities effortless.
+* **Performance**: Benefit from the speed and efficiency of SvelteKit, combined with the utility-first approach of Tailwind CSS.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+# 🚀 Getting Started
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## Installation and Setup
 
-## Developing
+- **Clone the repository:**
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+  ```bash
+  git clone https://github.com/wavly/notes
+  ```
 
-```bash
-npm run dev
+- **Navigate to the project directory:**
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+  ```bash
+   cd notes
+   ```
 
-## Building
+- **Install dependencies:**
 
-To create a production version of your app:
+  ```bash
+  pnpm install
+  ```
 
-```bash
-npm run build
-```
+## Development
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+- `pnpm dev` To start the dev server
+- `pnpm build` To build the static site into `./build`
+- `pnpm preview` To preview the builded site in `./build` ( no dev environment )
