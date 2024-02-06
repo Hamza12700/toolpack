@@ -9,7 +9,7 @@
 
   async function getHashes(hashType: string) {
     const data = await fetch(
-      `http://cryptos.up.railway.app/${hashType}?text=${input}`,
+      `https://cryptos.up.railway.app/${hashType}?text=${input}`,
       { credentials: "same-origin" },
     );
     const result = await data.json();
