@@ -21,5 +21,7 @@
     <p>{data.description}</p>
   </hgroup>
 
-  <svelte:component this={Component} />
+  <main class="rounded-md bg-black/20 p-4">
+    <svelte:component this={Component} />
+  </main>
 </main>
