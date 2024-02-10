@@ -27,5 +27,12 @@ export const tools: Tools[] = [
 		description: "Encode to url-encoded format (also known as 'percent-encoded') or decode",
 		link: "/url-encoder",
 		component: "UrlEncoder"
+	},
+	{
+		title: "UUIDs generator",
+		icon_name: "teenyicons:fingerprint-solid",
+		description: "A Universally Unique Identifier (UUID) is a 128-bit number used to identify information in computer systems.",
+		link: "/uuid-generator",
+		component: "UuidGenerator"
 	}
 ]
