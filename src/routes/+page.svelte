@@ -3,7 +3,7 @@
   import { tools } from "../tools";
 </script>
 
-<div class="mt-4 flex flex-wrap items-stretch gap-10">
+<div class="mt-4 flex flex-wrap justify-center gap-5">
   {#each tools as tool}
     <ToolCard
       title={tool.title}
