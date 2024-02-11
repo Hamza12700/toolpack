@@ -1,5 +1,5 @@
 <script lang="ts">
-  let input = "";
+  let input = "Hello World";
   const hashes = {
     sha1: "",
     sha256: "",
@@ -7,24 +7,28 @@
     md5: "",
   };
 
-  async function getHashes(hashType: string) {
-    const data = await fetch(
-      `https://cryptos.up.railway.app/${hashType}?text=${input}`,
-      { credentials: "same-origin" },
-    );
-    const result = await data.json();
-    hashes[hashType] = result;
+  async function getHashes(text: string) {
+    const [md5Hash, sha1Hash, sha256Hash, sha224Hash] = await Promise.all([
+      fetch(`https://cryptos.up.railway.app/md5?text=${text}`),
+      fetch(`https://cryptos.up.railway.app/sha1?text=${text}`),
+      fetch(`https://cryptos.up.railway.app/sha256?text=${text}`),
+      fetch(`https://cryptos.up.railway.app/sha224?text=${text}`),
+    ]);
+
+    const [md5Json, sha1Json, sha256Json, sha224Json] = await Promise.all([
+      md5Hash.json(),
+      sha1Hash.json(),
+      sha256Hash.json(),
+      sha224Hash.json(),
+    ]);
+
+    hashes.md5 = md5Json;
+    hashes.sha1 = sha1Json;
+    hashes.sha256 = sha256Json;
+    hashes.sha224 = sha224Json;
   }
 
-  $: {
-    if (!input) {
-      input = "testing text";
-    }
-    getHashes("md5");
-    getHashes("sha1");
-    getHashes("sha256");
-    getHashes("sha224");
-  }
+  $: getHashes(input);
 </script>
 
 <form class="border-b-2 border-white/10 pb-4">

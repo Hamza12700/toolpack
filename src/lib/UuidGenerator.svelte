@@ -1,12 +1,11 @@
 <script lang="ts">
   let input = "Hello World";
   let fromStringUUID = "";
-  let randomlyGenUUID = ""
+  let randomlyGenUUID = "";
 
   async function getUUIDFromString(text: string) {
     const data = await fetch(
       `https://cryptos.up.railway.app/uuid?text=${text}`,
-      { credentials: "same-origin" },
     );
 
     const result = await data.json();
@@ -14,20 +13,13 @@
   }
 
   async function randomUUID() {
-    const data = await fetch("https://cryptos.up.railway.app/random-uuid", { credentials: "same-origin"})
-    const resutl = await data.json()
-    randomlyGenUUID = resutl
+    const data = await fetch("https://cryptos.up.railway.app/random-uuid");
+    const resutl = await data.json();
+    randomlyGenUUID = resutl;
   }
 
   $: getUUIDFromString(input);
-
-  randomUUID()
-
-  $: {
-    if (!input) {
-      input = "Hello World";
-    }
-  }
+  randomUUID();
 </script>
 
 <hgroup>
@@ -38,11 +30,20 @@
     name="input"
     id="input"
   ></textarea>
-  <p class="text-center mt-3"><span class="font-semibold text-lg font-mono">UUID:</span> {fromStringUUID}</p>
+  <p class="mt-3 text-center">
+    <span class="font-mono text-lg font-semibold">UUID:</span>
+    {fromStringUUID}
+  </p>
 </hgroup>
 
 <hgroup>
-  <h1 class="my-3 border-t-2 border-white/10 pt-2 font-semibold">Generate Random UUID:</h1>
+  <h1 class="my-3 border-t-2 border-white/10 pt-2 font-semibold">
+    Generate Random UUID:
+  </h1>
   <p>{randomlyGenUUID}</p>
-  <button on:click={randomUUID} type="button" class="bg-white/10 mt-4 rounded-sm py-2 px-4">Generate</button>
+  <button
+    on:click={randomUUID}
+    type="button"
+    class="mt-4 rounded-sm bg-white/10 px-4 py-2">Generate</button
+  >
 </hgroup>
