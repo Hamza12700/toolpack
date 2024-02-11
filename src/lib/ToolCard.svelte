@@ -10,7 +10,7 @@
   }
 </script>
 
-<a data-sveltekit-preload-data href={link}>
+<a class="border-2 border-white/20 rounded-md" data-sveltekit-preload-data href={link}>
   <div class="w-96 h-44 px-4 py-3 rounded-md bg-white/10">
     <div class="flex items-center justify-between">
       <Icon class="text-3xl" icon={icon_name}/>
