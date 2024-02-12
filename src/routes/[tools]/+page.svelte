@@ -8,7 +8,7 @@
   let Component: ConstructorOfATypedSvelteComponent;
 
   onMount(async () => {
-    Component = (await import(`../../lib/${data.component}.svelte`)).default;
+    Component = (await import(`../../tools/${data.component}.svelte`)).default;
   });
 </script>
 
