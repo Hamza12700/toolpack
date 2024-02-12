@@ -12,10 +12,10 @@
         Math.floor(Math.random() * characters.length),
       );
     }
-    output = result
+    output = result;
   }
 
-  random_characters()
+  random_characters();
 </script>
 
 <div class="mt-4 rounded-md bg-black/20 p-4">
