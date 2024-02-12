@@ -1,6 +1,6 @@
 <script lang="ts">
   import ToolCard from "$lib/ToolCard.svelte";
-  import { tools } from "../tools";
+  import { tools } from "../ToolsList";
 </script>
 
 <div class="mt-4 flex flex-wrap justify-center gap-5">
