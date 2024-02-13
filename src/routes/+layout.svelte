@@ -12,3 +12,9 @@
 <main class="px-8">
   <slot />
 </main>
+
+<style>
+  :global(textarea) {
+    @apply h-20 w-full rounded-md bg-white/10 px-2 py-1;
+  }
+</style>
