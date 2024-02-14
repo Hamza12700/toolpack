@@ -30,5 +30,5 @@
       type="range"
     />
   </div>
-  <textarea class="mt-2 bg-white/10 px-1 h-20 w-full rounded-md text-center">{output}</textarea>
+  <textarea class="mt-2 text-center">{output}</textarea>
 </div>

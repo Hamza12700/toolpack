@@ -22,7 +22,7 @@
 <textarea
   bind:value={encode_input}
   placeholder="Input"
-  class="mb-3 mt-2 h-20 w-full rounded-sm bg-white/10 p-1"
+  class="mb-3 mt-2"
   name="input"
   id="input"
 ></textarea>
@@ -32,7 +32,7 @@
   readonly
   placeholder="Output"
   bind:value={encoded_output}
-  class="h-20 w-full rounded-sm bg-white/10 p-1"
+  class="mb-3 mt-2"
   name="output"
   id="output"
 ></textarea>
@@ -44,7 +44,7 @@
 <textarea
   placeholder="Input"
   bind:value={decode_input}
-  class="mb-3 mt-2 h-20 w-full rounded-sm bg-white/10 p-1"
+  class="mb-3 mt-2"
   name="input"
   id="input"
 ></textarea>
@@ -54,7 +54,7 @@
   placeholder="Output"
   readonly
   bind:value={decoded_output}
-  class="h-20 w-full rounded-sm bg-white/10 p-1"
+  class="mb-3 mt-2"
   name="output"
   id="output"
 ></textarea>
