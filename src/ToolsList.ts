@@ -34,5 +34,12 @@ export const tools: Tools[] = [
 		description: "A Universally Unique Identifier (UUID) is a 128-bit number used to identify information in computer systems.",
 		link: "/uuid-generator",
 		component: "UuidGenerator"
-	}
+	},
+	{
+		title: "Base64 string encoder/decoder",
+		icon_name: "charm:file-binary",
+		description: "Simply encode and decode string into a their base64 representation.",
+		link: "/base64-string-converter",
+		component: "Base64"
+	},
 ]
