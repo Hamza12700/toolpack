@@ -49,4 +49,11 @@ export const tools: Tools[] = [
 		link: "/text-to-binary",
 		component: "TextToBinary"
 	},
+	{
+		title: "Escape HTML entities",
+		icon_name: "tabler:file-type-html",
+		description: "Escape or unescape html entities (replace <,>, &, \" and \' to their html version)",
+		link: "/html-entities-escape",
+		component: "EscapeHTMLEntities"
+	},
 ]
