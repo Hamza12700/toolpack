@@ -37,9 +37,16 @@ export const tools: Tools[] = [
 	},
 	{
 		title: "Base64 string encoder/decoder",
-		icon_name: "charm:file-binary",
+		icon_name: "tabler:list-letters",
 		description: "Simply encode and decode string into a their base64 representation.",
 		link: "/base64-string-converter",
 		component: "Base64"
+	},
+	{
+		title: "Text to ASCII Binary",
+		icon_name: "ant-design:field-binary-outlined",
+		description: "Convert text to its ASCII binary representation and vice versa.",
+		link: "/text-to-binary",
+		component: "TextToBinary"
 	},
 ]
