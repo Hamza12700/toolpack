@@ -8,11 +8,11 @@ type Tools = {
 
 export const tools: Tools[] = [
 	{
-		title: "Token Generator",
+		title: "Random String Generator",
 		icon_name: "game-icons:power-generator",
 		description: "Generate random string",
-		link: "/token-generator",
-		component: "TokenGenerator"
+		link: "/random-string-generator",
+		component: "StringGenerator"
 	},
 	{
 		title: "Hash Text",
