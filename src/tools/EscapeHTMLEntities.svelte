@@ -16,7 +16,7 @@
   async function unescapeHTMLEntities(escaped_html_string: string) {
     let encode_to_base64 = btoa(escaped_html_string);
     const data = await fetch(
-      `http://cryptos.up.railway.app/unescape-html-entities?text=${encode_to_base64}&base64=true`,
+      `https://cryptos.up.railway.app/unescape-html-entities?text=${encode_to_base64}&base64=true`,
     );
     const encoded_base64 = await data.json();
     const result = atob(encoded_base64);
