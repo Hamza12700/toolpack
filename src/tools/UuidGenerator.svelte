@@ -5,7 +5,7 @@
 
   async function getUUIDFromString(text: string) {
     const data = await fetch(
-      `https://cryptos.up.railway.app/uuid?text=${text}`,
+      `https://cryptos.up.railway.app/uuid/${text}`,
     );
 
     const result = await data.json();
@@ -13,7 +13,7 @@
   }
 
   async function randomUUID() {
-    const data = await fetch("https://cryptos.up.railway.app/random-uuid");
+    const data = await fetch("https://cryptos.up.railway.app/uuid/random");
     const resutl = await data.json();
     randomlyGenUUID = resutl;
   }

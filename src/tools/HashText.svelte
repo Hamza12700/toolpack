@@ -9,10 +9,10 @@
 
   async function getHashes(text: string) {
     const [md5Hash, sha1Hash, sha256Hash, sha224Hash] = await Promise.all([
-      fetch(`https://cryptos.up.railway.app/md5?text=${text}`),
-      fetch(`https://cryptos.up.railway.app/sha1?text=${text}`),
-      fetch(`https://cryptos.up.railway.app/sha256?text=${text}`),
-      fetch(`https://cryptos.up.railway.app/sha224?text=${text}`),
+      fetch(`https://cryptos.up.railway.app/md5/${text}`),
+      fetch(`https://cryptos.up.railway.app/sha1/${text}`),
+      fetch(`https://cryptos.up.railway.app/sha256/${text}`),
+      fetch(`https://cryptos.up.railway.app/sha224/${text}`),
     ]);
 
     const [md5Json, sha1Json, sha256Json, sha224Json] = await Promise.all([
